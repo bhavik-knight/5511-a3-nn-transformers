@@ -527,20 +527,6 @@
                                 <td class="math" style="color:var(--danger)">40.0%</td>
                                 <td><strong>Extreme Stalling.</strong> Steps are microscopic. It barely moves even after 2,000 passes, resulting in severe underfitting.</td>
                             </tr>
-                            <tr>
-                                <td><strong>4. Unscaled Data</strong><br><small>(Feature × 1000)</small></td>
-                                <td class="math" style="color:var(--warning)">11.7389</td>
-                                <td class="math" style="color:var(--danger)">16.4063</td>
-                                <td class="math" style="color:var(--warning)">60.0%</td>
-                                <td><strong>Exploding Gradients.</strong> Huge raw features create massive calculations that completely break Python's mathematical memory limits (NaN errors).</td>
-                            </tr>
-                            <tr>
-                                <td><strong>5. Vanishing Gradients</strong><br><small>(Init Weights = 10.0)</small></td>
-                                <td class="math">~0.4520</td>
-                                <td class="math" style="color:var(--danger)">NaN</td>
-                                <td class="math" style="color:var(--warning)">60.0%</td>
-                                <td><strong>Mathematical Paralysis.</strong> Huge starting weights flatten the curve (slope = 0). If the slope is 0, the model permanently stops learning.</td>
-                            </tr>
                         </tbody>
                     </table>
                 </div>
